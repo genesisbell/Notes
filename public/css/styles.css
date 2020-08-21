@@ -1,0 +1,207 @@
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+button:hover, input:hover{
+    outline: none;
+}
+
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #E0A800;
+    border-radius: 5px;
+}
+
+/*----------------Frontpage----------------*/
+#frontpage{
+    text-align: center;
+    padding: 13%;
+}
+
+#frontpage h1{
+    color: black;    
+    display: block;
+    font-size: 7rem;
+}
+
+#frontpage button{
+    margin: 50px;
+    font-size: 2rem;
+}
+
+/*----------------Login and Register----------------*/
+#login{
+    text-align: center;
+}
+
+#login h3{
+    font-size: 4.5rem;   
+    margin: 100px 0 50px;
+}
+
+#login input{
+    font-size: 1.3rem;
+    display: block;
+    margin: 25px auto;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+#login button{
+    margin-top: 25px;
+    width: 250px;
+    font-size: 1.3rem;
+}
+
+
+/*----------------Header----------------*/
+header{
+    background-color: rgb(39, 39, 39);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    color: rgb(197, 197, 197);
+    letter-spacing: .5rem;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+header button{
+    position: absolute;
+    right: 50px;   
+}
+
+header .link{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: .5rem .8rem;
+    margin: -.5rem -.8rem;
+}
+
+/*----------------Create Note----------------*/
+form.create-note{
+    position: relative;
+    width: 470px;
+    margin: 20px auto;
+    
+}
+
+
+form.create-note input, form.create-note textarea{
+    font-size: 1.3rem;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border-left: 5px solid #E0A800;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    outline: none;
+    resize: none;
+}
+
+
+form.create-note button:last-of-type{
+    background-color: #E0A800;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    bottom: -15px;
+}
+
+.checkbox-btn{
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    top: 8px;
+
+}
+
+/**/
+.notes-container{
+    padding-bottom: 3.1rem;
+}
+
+.note{
+    font-size: 1.3rem;
+    min-width: 250px;
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 500px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border-left: 5px solid #E0A800;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    position: relative;
+}
+
+.note h6{
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
+.note button{
+    border: none;
+    background-color: transparent;
+    color: #E0A800;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.note button:hover{
+    color: #b98b02;
+}
+
+/*----------------Footer----------------*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.1rem;
+    text-align: center;
+}
+
+footer p{
+    padding: 0;
+    margin: 0;
+}
